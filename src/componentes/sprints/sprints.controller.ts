@@ -12,4 +12,14 @@ export class SprintsController {
 	obtenerSprints(@Req() request: Request){
 		return this.sprintsService.obtenerSprints();
 	}
+
+	@Get('reporte_acumulativo')
+	reportCumulativeFrequency(@Req() request: Request){
+		return this.sprintsService.reportCumulativeFrequency();
+	}
+
+	@Get('reporte_por_sprint')
+	reportBySprint(@Req() request: Request){
+		return this.sprintsService.reportBySprint();
+	}
 }
