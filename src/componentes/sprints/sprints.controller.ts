@@ -22,4 +22,9 @@ export class SprintsController {
 	reportBySprint(@Req() request: Request){
 		return this.sprintsService.reportBySprint();
 	}
+
+	@Get('smells')
+	getSmells(@Req() request: Request){
+		return this.sprintsService.getSmells();
+	}
 }
